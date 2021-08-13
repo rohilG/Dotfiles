@@ -13,6 +13,7 @@ let g:coc_global_extensions = [
     \ 'coc-json',
     \ 'coc-prettier',
     \ 'coc-css',
+    \ 'coc-html',
     \ ]
 
 function! CocCurrentFunction()
@@ -170,6 +171,14 @@ let g:onedark_hide_endofbuffer = 1
 " If a file is already open, open the current one in a new buffer
 "let g:ctrlp_switch_buffer = 'et'
 
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
+
 "Initialize plugin system
 call plug#end()
 
@@ -177,6 +186,9 @@ call plug#end()
 syntax on
 set termguicolors
 colorscheme onedark
+
+" Use new regular expression engine
+set re=0
 
 " i forget what this does but i dont want to remove it 
 set laststatus=2

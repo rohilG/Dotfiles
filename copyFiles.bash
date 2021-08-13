@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cp ~/bash_profile .
+cp ~/.bash_profile .
 cp ~/.bashrc .
 cp ~/.tmux.conf .
 cp ~/.vimrc .
