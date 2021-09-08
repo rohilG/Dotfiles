@@ -44,6 +44,11 @@ Install thefuck:
 brew install thefuck
 ```
 
+Install ripgrep for better searching in Vim:
+```
+brew install ripgrep
+```
+
 Autoload for vim: 
 ```
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
