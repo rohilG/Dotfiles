@@ -62,7 +62,7 @@ Close iterm and reopen. This will cause .zshrc to be sourced. (Alternatively, on
 To install the font:
 ```
 brew tap homebrew/cask-fonts
-brew cask install font-meslo-lg-nerd-font
+brew install font-meslo-lg-nerd-font
 ```
 
 In iTerm2 -> Preferences -> Profiles -> Text -> Font, select `Meslo LGL Nerd Font` for `Font`
